@@ -6,6 +6,8 @@ Up next:
 - get databased
 - RSC server
 
+![L.A. Lakers Legends Kareem Abdul-Jabbar, Shaquille O'Neal, George Mikan](/static/lakeys.jpg)
+
 ## RSC IT ALL
 gotta have it:
 - [go](https://go.dev/doc/install)
