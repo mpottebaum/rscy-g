@@ -9,10 +9,13 @@ Up next:
 ![L.A. Lakers Legends Kareem Abdul-Jabbar, Shaquille O'Neal, George Mikan](/static/pics/lakeys.jpg)
 
 ## RSC IT ALL
-gotta have it:
+gotta have it all:
 - [go](https://go.dev/doc/install)
 - [air](https://github.com/cosmtrek/air#installation)
 - [node](https://nodejs.org/en/download)
+
+_you can have it all_
+![Nine Inch Nailer Trent "Rezzy" Reznor](/static/pics/9-incher.jpg)
 
 in the directory:
 ```
