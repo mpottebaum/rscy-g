@@ -5,11 +5,14 @@
   "main": "index.js",
   "scripts": {
     "build": "tailwindcss build -o static/css/tailwind.css",
-    "watch": "tailwindcss build -o static/css/tailwind.css --watch"
+    "watch": "tailwindcss build -o static/css/tailwind.css --watch",
+    "format": "prettier ./tmpl --write"
   },
   "author": "Mike Pottebaum",
   "license": "ISC",
   "devDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.11",
     "tailwindcss": "^3.4.1"
   }
 }
