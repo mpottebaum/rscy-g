@@ -6,7 +6,7 @@ Up next:
 - get databased
 - RSC server
 
-![L.A. Lakers Legends Kareem Abdul-Jabbar, Shaquille O'Neal, George Mikan](/static/lakeys.jpg)
+![L.A. Lakers Legends Kareem Abdul-Jabbar, Shaquille O'Neal, George Mikan](/static/pics/lakeys.jpg)
 
 ## RSC IT ALL
 gotta have it:
@@ -19,7 +19,7 @@ in the directory:
 # tailwind things
 npm i
 npm run build
-# tailwind watch /tmpl
+# tailwind watch /views
 npm run watch
 
 # go watch go

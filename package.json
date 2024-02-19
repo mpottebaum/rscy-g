@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tailwindcss build -o static/css/tailwind.css",
     "watch": "tailwindcss build -o static/css/tailwind.css --watch",
-    "format": "prettier ./tmpl --write"
+    "lint": "prettier ./views --check",
+    "format": "prettier ./views --write"
   },
   "author": "Mike Pottebaum",
   "license": "ISC",
