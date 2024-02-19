@@ -1,0 +1,15 @@
+{
+  "name": "rscy-g",
+  "version": "0.0.1",
+  "description": "rscy shit",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss build -o static/css/tailwind.css",
+    "watch": "tailwindcss build -o static/css/tailwind.css --watch"
+  },
+  "author": "Mike Pottebaum",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
