@@ -4,3 +4,6 @@ package-lock.json
 
 # tailwind
 static/css
+
+# air
+tmp
