@@ -19,13 +19,18 @@ _you can have it all_
 
 in the directory:
 ```
-# tailwind things
-npm i
+# tailwind setup things
+npm install
 npm run build
-# tailwind watch /views
-npm run watch
 
-# go watch go
+# tailwind watch /views dir
+npm run watch
+```
+
+meanwhile in another shell...
+start er up:
+```
+# air watch go code
 air
 ```
 
