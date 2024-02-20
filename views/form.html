@@ -1,36 +1,29 @@
 {{ define "body"}}
-<div class="h5 bg-primary m-2 p-2 text-center text-white">RSVP</div>
+<div class="p-2 text-center text-white">RSVP</div>
 {{ if gt (len .Errors) 0}}
-<ul class="text-danger mt-3">
+<ul class="text-red-500 pt-3">
   {{ range .Errors }}
   <li>{{ . }}</li>
   {{ end }}
 </ul>
 {{ end }}
-<form method="POST" class="m-2">
-  <div class="form-group my-1">
-    <label>Your name:</label>
-    <input name="name" class="form-control" value="{{.Name}}" />
+<form method="POST" class="p-2 flex flex-col">
+  <div class="flex">
+    <div class="flex flex-col w-full pr-2">
+        <div class="flex flex-col pb-1">
+          <label for="name">RSC'r name:</label>
+          <input id="name" name="name" class="border round" value="{{.Name}}" />
+        </div>
+        <div class="flex flex-col pb-1">
+          <label for="email">RSC'r email:</label>
+          <input id="email" name="email" class="border round" value="{{.Email}}" />
+        </div>
+    </div>
+    <div class="flex flex-col py-1 w-full">
+      <label for="busyness">RSCy busyness:</label>
+      <textarea id="busyness" name="busyness" class="border round" value="{{.Busyness}}" rows="3"></textarea>
+    </div>
   </div>
-  <div class="form-group my-1">
-    <label>Your email:</label>
-    <input name="email" class="form-control" value="{{.Email}}" />
-  </div>
-  <div class="form-group my-1">
-    <label class="text-slate-50">Your phone number:</label>
-    <input name="phone" class="form-control" value="{{.Phone}}" />
-  </div>
-  <div>
-    <label class="round border p-2 text-red-500">Will you poop?</label>
-    <select name="willattend" class="form-select">
-      <option value="true" {{if .WillAttend}}selected{{end}}>
-        Yes, I'll be poop
-      </option>
-      <option value="false" {{if not .WillAttend}}selected{{end}}>
-        No, I can't come
-      </option>
-    </select>
-  </div>
-  <button class="btn btn-primary mt-3" type="submit">Submit RSVP</button>
+  <button class="border round p-2" type="submit">GET RSCy</button>
 </form>
 {{ end }}

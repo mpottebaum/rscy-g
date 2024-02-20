@@ -6,17 +6,19 @@
       <tr>
         <th>Name</th>
         <th>Email</th>
-        <th>Phone</th>
+        <th>Busyness</th>
+        <th>Dopness</th>
       </tr>
     </thead>
     <tbody>
-      {{ range . }} {{ if .WillAttend }}
+      {{ range . }}
       <tr>
         <td>{{ .Name }}</td>
         <td>{{ .Email }}</td>
-        <td>{{ .Phone }}</td>
+        <td>{{ .Busyness }}</td>
+        <td>{{ .Dopness }}</td>
       </tr>
-      {{ end }} {{ end }}
+      {{ end }}
     </tbody>
   </table>
 </div>

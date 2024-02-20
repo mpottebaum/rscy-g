@@ -31,6 +31,13 @@ air
 
 we're watching files and rebuilding and shit but we're not reloading it in the browser yet ok sorry you're gonna have to do that yourself for now my bad
 
+## DADA
+
+*RSCY G*
+- name - rsc'r
+- email - limit number of rscy's by email
+- busyness - buncha text
+- dopness - integer betweem 0-100
 
 ## OTHER STUFF
 
