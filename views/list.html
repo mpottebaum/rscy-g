@@ -1,0 +1,23 @@
+{{ define "body"}}
+<div class="p-2">
+  <header class="flex justify-center border-b-2 border-black p-1">
+    <h1 class="text-4xl">Here be risky Gs and their dopness</h1>
+  </header>
+  <section>
+    <div class="flex justify-center">
+      <div class="grid grid-cols-4">
+        {{ range . }}
+        <article class="p-1">
+          <h3 class="text-2xl">{{ .Dopness }} Level Dopness</h3>
+          <div class="flex text-lg">
+            <p>{{ .Name }}</p>
+            <p>{{ .Email }}</p>
+          </div>
+          <p>{{ .Busyness }}</p>
+        </article>
+        {{end}}
+      </div>
+    </div>
+  </section>
+</div>
+{{ end }}

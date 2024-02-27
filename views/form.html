@@ -1,0 +1,40 @@
+{{ define "body"}}
+<div class="p-2 text-center text-white">RSVP</div>
+{{ if gt (len .Errors) 0}}
+<ul class="pt-3 text-red-500">
+  {{ range .Errors }}
+  <li>{{ . }}</li>
+  {{ end }}
+</ul>
+{{ end }}
+<form method="POST" class="flex flex-col p-2">
+  <div class="flex">
+    <div class="flex w-full flex-col pr-2">
+      <div class="flex flex-col pb-1">
+        <label for="name">RSC'r name:</label>
+        <input id="name" name="name" class="round border" value="{{.Name}}" />
+      </div>
+      <div class="flex flex-col pb-1">
+        <label for="email">RSC'r email:</label>
+        <input
+          id="email"
+          name="email"
+          class="round border"
+          value="{{.Email}}"
+        />
+      </div>
+    </div>
+    <div class="flex w-full flex-col py-1">
+      <label for="busyness">RSCy busyness:</label>
+      <textarea
+        id="busyness"
+        name="busyness"
+        class="round border"
+        value="{{.Busyness}}"
+        rows="3"
+      ></textarea>
+    </div>
+  </div>
+  <button class="round border p-2" type="submit">GET RSCy</button>
+</form>
+{{ end }}
