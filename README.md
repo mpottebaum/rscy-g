@@ -2,8 +2,20 @@
 
 trailblazing the Go/RSC stack: Risky a Go Go
 
-Up next:
+Now Playing:
 - get databased
+
+Todoozers:
+- setup turso db + switch between local/remote
+- local replicas?
+- limit list query + pagination
+
+Up next:
+- fix the `/rscy` ui
+  - mobile responsiveness (flip flex boxes, reduce grid columns, etc.)
+  - abbreviate `Busyness` text + some kinda expando
+    - for expando: thinking modal on hover kinda like a netflix tile
+  - cooler `Dopness` representation
 - RSC server
 
 ![L.A. Lakers Legends Kareem Abdul-Jabbar, Shaquille O'Neal, George Mikan](/static/pics/lakeys.jpg)
