@@ -39,7 +39,6 @@ func connectDb() *sql.DB {
 	dir := rootDir()
 	dbPath := "/db/rscy-gs.db"
 	dbUrl := "file://" + dir + dbPath
-	fmt.Println(dbUrl)
 
 	db, err := sql.Open("libsql", dbUrl)
 	if err != nil {
@@ -89,7 +88,6 @@ func getAllRscyGs(db *sql.DB) ([]RscyG, error) {
 		}
 
 		rscyGs = append(rscyGs, rscyG)
-		fmt.Println("rscy: ", rscyG.Id, rscyG.Name)
 	}
 
 	if err := rows.Err(); err != nil {
