@@ -1,6 +1,6 @@
 # RSC-Y G
 
-trailblazing the Go/RSC stack
+trailblazing the Go/RSC stack: Risky a Go Go
 
 Up next:
 - get databased
@@ -15,7 +15,7 @@ gotta have it all:
 - [node](https://nodejs.org/en/download) - to run tailwind/watch views files
 
 _you can have it all_
-![Nine Inch Nailer Trent "Rezzy" Reznor](/static/pics/9-incher.jpg)
+![Nine Inch Nailer Trent "Rezzy" Reznor - Tiger Beat](/static/pics/9-incher.jpg)
 
 in the directory:
 ```
@@ -36,7 +36,7 @@ air
 
 we're watching files and rebuilding and shit but we're not reloading it in the browser yet ok sorry you're gonna have to do that yourself for now my bad
 
-## DADA
+## DADA (data)
 
 *RSCY G*
 - name - rsc'r
