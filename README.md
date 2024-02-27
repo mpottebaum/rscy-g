@@ -13,13 +13,25 @@ gotta have it all:
 - [go](https://go.dev/doc/install) - to run go
 - [air](https://github.com/cosmtrek/air#installation) - to watch go files
 - [node](https://nodejs.org/en/download) - to run tailwind/watch views files
+- [sqlite](https://www.sqlite.org/index.html) - local development database
 
 _you can have it all_
 ![Nine Inch Nailer Trent "Rezzy" Reznor - Tiger Beat](/static/pics/9-incher.jpg)
 
+
+## set up the local db, bb
 in the directory:
 ```
-# tailwind setup things
+# sqlite via npm bc y not bruv
+npm run db:create
+```
+
+run it again and you got yourself a fresh new db, ya dig?
+
+## set up the dev env, bb
+in the directory:
+```
+# install tailwind + build css
 npm install
 npm run build
 

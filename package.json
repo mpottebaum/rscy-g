@@ -7,7 +7,8 @@
     "build": "tailwindcss build -o static/css/tailwind.css",
     "watch": "tailwindcss build -o static/css/tailwind.css --watch",
     "lint": "prettier ./views --check",
-    "format": "prettier ./views --write"
+    "format": "prettier ./views --write",
+    "db:create": "sqlite3 db/rscy-gs.db \".read db/rscy-gs.sql\""
   },
   "author": "Mike Pottebaum",
   "license": "ISC",

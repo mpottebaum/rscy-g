@@ -7,3 +7,9 @@ static/css/tailwind.css
 
 # air
 tmp
+
+# database
+db/rscy-gs.db
+
+# environment
+.env
