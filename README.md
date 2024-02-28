@@ -40,7 +40,15 @@ npm run db:create
 
 run it again and you got yourself a fresh new db, ya dig?
 
+## use turso
+add deez variables to a `.env` file in the root dir, yo:
+```
+DB_TOKEN=
+DB_URL=
+```
+
 ## set up the dev env, bb
+
 in the directory:
 ```
 # install tailwind + build css

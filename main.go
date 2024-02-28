@@ -11,6 +11,7 @@ import (
 	"path/filepath"
 	"strings"
 
+	env "github.com/gofor-little/env"
 	// local db:
 	_ "github.com/libsql/go-libsql"
 	// remote db:
@@ -36,6 +37,15 @@ func rootDir() string {
 }
 
 func connectDb() *sql.DB {
+	envDbPath := env.Get("DB_URL", "local")
+	if envDbPath != "local" {
+		db, err := sql.Open("libsql", envDbPath)
+		if err != nil {
+			logError(err, "failed to open db %s")
+			os.Exit(1)
+		}
+		return db
+	}
 	dir := rootDir()
 	dbPath := "/db/rscy-gs.db"
 	dbUrl := "file://" + dir + dbPath
@@ -139,6 +149,7 @@ func createFormHandler(db *sql.DB) func(http.ResponseWriter, *http.Request) {
 }
 
 func main() {
+	env.Load("./.env")
 	db := connectDb()
 	loadTemplates()
 	http.HandleFunc("/", welcomeHandler)
