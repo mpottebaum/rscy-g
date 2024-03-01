@@ -74,7 +74,9 @@ we're watching files and rebuilding and shit but we're not reloading it in the b
 - name - rsc'r
 - email - limit number of rscy's by email
 - busyness - buncha text
-- dopness - integer betweem 0-100
+- dopness - integer betweem 0-100 representing **D**ennis h**OP**per**NESS**
+
+![The Dop Man himself, domrade Dennis Hopper](/static/pics/dopper.jpg)
 
 ## OTHER STUFF
 

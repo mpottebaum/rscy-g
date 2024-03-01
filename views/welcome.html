@@ -1,8 +1,20 @@
 {{ define "body"}}
-<div class="text-center">
+<div class="flex h-full flex-col text-center">
   <h3>Let's get RSC-y dude!</h3>
-  <a href="/rscy/new">
-    <button class="round border p-4">RSC IT</button>
-  </a>
+  <div class="flex h-full w-full justify-center">
+    <div
+      class="dopper-img flex h-full max-h-64 w-full max-w-64 rounded-2xl border hover:opacity-95"
+    >
+      <div class="flex h-full w-full">
+        <a href="/rscy/new" class="flex h-full w-full cursor-pointer">
+          <button
+            class="flex h-full w-full items-center justify-center p-4 text-xl text-white"
+          >
+            RSC IT
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
 {{ end }}
