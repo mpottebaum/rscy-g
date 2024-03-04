@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.dopper-img {
+  background-image: url(/files/pics/dopper.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
