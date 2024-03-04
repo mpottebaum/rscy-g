@@ -3,9 +3,12 @@
 trailblazing the Go/RSC stack: Risky a Go Go
 
 Now Playing:
-- get databased
+- RSC server
 
 Todoozers:
+- move current code into dir + create new node proj along side it <-- doin
+  - except `/db`
+- no idea - read dockies I guess
 
 Up next:
 - fix the `/rscy` ui
@@ -13,7 +16,6 @@ Up next:
   - abbreviate `Busyness` text + some kinda expando
     - for expando: thinking modal on hover kinda like a netflix tile
   - cooler `Dopness` representation
-- RSC server
 
 ![L.A. Lakers Legends Kareem Abdul-Jabbar, Shaquille O'Neal, George Mikan](/static/pics/lakeys.jpg)
 

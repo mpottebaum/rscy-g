@@ -83,7 +83,6 @@ func getAllRscyGs(db *sql.DB, limit int, page int) ([]RscyG, error) {
 			fmt.Println("Error scanning row:", err)
 			return rscyGs, err
 		}
-		fmt.Println("sup bro", rscyG.CreatedAt)
 		rscyGs = append(rscyGs, rscyG)
 	}
 
