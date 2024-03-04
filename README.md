@@ -6,7 +6,6 @@ Now Playing:
 - get databased
 
 Todoozers:
-- limit list query + pagination <-- doin
 
 Up next:
 - fix the `/rscy` ui

@@ -7,8 +7,21 @@
     <link rel="stylesheet" href="/files/css/index.css" />
     <link rel="stylesheet" href="/files/css/tailwind.css" />
   </head>
-  <body class="h-full">
-    <main class="h-full p-4">
+  <body class="flex h-full flex-col">
+    <nav>
+      <ol class="flex justify-end">
+        <li class="px-2">
+          <a href="/rscy"><h6>RSCy Busyness</h6></a>
+        </li>
+        <li class="border-x-2 border-black px-2">
+          <a href="/rscy/new"><h6>RSC IT</h6></a>
+        </li>
+        <li class="px-2">
+          <a href="/"><h6>Homie</h6></a>
+        </li>
+      </ol>
+    </nav>
+    <main class="flex h-full flex-col p-4">
       {{ block "body" . }} Content Goes Here {{ end }}
     </main>
   </body>
