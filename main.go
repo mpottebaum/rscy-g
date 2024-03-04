@@ -59,17 +59,17 @@ func getAllRscyGs(db *sql.DB, limit int, page int) ([]RscyG, error) {
 	var rows *sql.Rows
 	var rscyGs []RscyG
 	var err error
-	isNoLimit := limit < 0
-	if isNoLimit {
-		rows, err = db.Query(`
-			SELECT * FROM RscyGs ORDER BY CreatedAt DESC;
-		`)
-	} else {
-		offset := (page - 1) * limit
-		rows, err = db.Query(`
+	if limit <= 0 || limit > 40 {
+		limit = 10
+	}
+	if page <= 0 {
+		page = 1
+	}
+	offset := (page - 1) * limit
+	rows, err = db.Query(`
 		SELECT * FROM RscyGs ORDER BY CreatedAt DESC LIMIT ? OFFSET ?;
 	`, limit, offset)
-	}
+
 	if err != nil {
 		logError(err, "failed to execute query: %v\n")
 		os.Exit(1)
@@ -100,7 +100,7 @@ func createListHandler(db *sql.DB) func(http.ResponseWriter, *http.Request) {
 		queryPage := request.URL.Query().Get("page")
 		limit, err := strconv.ParseInt(queryLimit, 0, 64)
 		if err != nil {
-			limit = -1
+			limit = 10
 		}
 		page, err := strconv.ParseInt(queryPage, 0, 64)
 		if err != nil {
