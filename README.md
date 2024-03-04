@@ -6,8 +6,7 @@ Now Playing:
 - get databased
 
 Todoozers:
-- local replicas?
-- limit list query + pagination
+- limit list query + pagination <-- doin
 
 Up next:
 - fix the `/rscy` ui
@@ -34,7 +33,7 @@ _you can have it all_
 in the directory:
 ```
 # open up turso db shell
-turso shell <db name>
+turso db shell <db name>
 
 # in shell, read .sql file
 .read ./db/rscy-gs.sql

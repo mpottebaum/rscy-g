@@ -4,7 +4,8 @@ CREATE TABLE IF NOT EXISTS RscyGs (
     Name TEXT,
     Email TEXT,
     Busyness TEXT,
-    Dopness INTEGER
+    Dopness INTEGER,
+    CreatedAt DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 INSERT INTO RscyGs (Id, Name, Email, Busyness, Dopness) VALUES
     (1, "Kayak", "miriam@makeba.rscy.gg", "Carpenter was born on January 16, 1948, in Carthage, New York, the son of Milton Jean (née Carter) and Howard Ralph Carpenter, a college music professor.[5] He and his family relocated to Bowling Green, Kentucky, during 1953, when his father took a job as a music professor at Western Kentucky University.[6] For much of his childhood, John and his family lived in a log cabin on Western Kentucky University's campus.[7][8]", 79),
