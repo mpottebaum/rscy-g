@@ -6,9 +6,12 @@ Now Playing:
 - RSC server
 
 Todoozers:
-- move current code into dir + create new node proj along side it <-- doin
-  - except `/db`
 - no idea - read dockies I guess
+  - game plan:
+    - build js code in `/rscy-biz` that outputs into the `/the-dopness` and mounts `rscy-biz`
+    - `the-dopness` will then need to open some sort of portal into the `rscy-biz` netherworld
+      - real-world architectural diagram:
+      ![Sisyphus or some shit I don't know](/the-dopness/static/pics/Journeys-to-the-Underworld.jpg)
 
 Up next:
 - fix the `/rscy` ui
@@ -17,7 +20,7 @@ Up next:
     - for expando: thinking modal on hover kinda like a netflix tile
   - cooler `Dopness` representation
 
-![L.A. Lakers Legends Kareem Abdul-Jabbar, Shaquille O'Neal, George Mikan](/static/pics/lakeys.jpg)
+![L.A. Lakers Legends Kareem Abdul-Jabbar, Shaquille O'Neal, George Mikan](/the-dopness/static/pics/lakeys.jpg)
 
 ## RSC IT ALL
 gotta have it all:
@@ -27,11 +30,11 @@ gotta have it all:
 - [turso](https://docs.turso.tech/cli/installation) - db, bb
 
 _you can have it all_
-![Nine Inch Nailer Trent "Rezzy" Reznor - Tiger Beat](/static/pics/9-incher.jpg)
+![Nine Inch Nailer Trent "Rezzy" Reznor - Tiger Beat](/the-dopness/static/pics/9-incher.jpg)
 
 
 ## if ya gotta set up tha db, bb
-in the directory:
+from the root directory:
 ```
 # open up turso db shell
 turso db shell <db name>
@@ -42,16 +45,16 @@ turso db shell <db name>
 
 run it again and you got yourself a fresh new db, ya dig?
 
-## use turso
-add deez variables to a `.env` file in the root dir, yo:
+## set up the dopness dev env, bb
+get in `/the-dopness` dir
+
+add deez variables to a `.env` file in that dir, yo:
 ```
 DB_TOKEN=
 DB_URL=
 ```
 
-## set up the dev env, bb
-
-in the directory:
+still inside `/the-dopness`:
 ```
 # install tailwind + build css
 npm install
@@ -78,7 +81,7 @@ we're watching files and rebuilding and shit but we're not reloading it in the b
 - busyness - buncha text
 - dopness - integer betweem 0-100 representing **D**ennis h**OP**per**NESS**
 
-![The Dop Man himself, domrade Dennis Hopper](/static/pics/dopper.jpg)
+![The Dop Man himself, domrade Dennis Hopper](/the-dopness/static/pics/dopper.jpg)
 
 ## OTHER STUFF
 

@@ -1,0 +1,15 @@
+{
+  "name": "rscy-biz",
+  "version": "0.0.1",
+  "description": "rscy shit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mike Pottebaum",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
