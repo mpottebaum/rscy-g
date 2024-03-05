@@ -9,7 +9,7 @@ Now Playing:
   - build js code in `/rscy-biz` that outputs into the `/the-dopness` and mounts `rscy-biz`
     - alternatively -> we serve everythang JS from `rscy-biz`
   - `the-dopness` will then need to open some sort of portal into the `rscy-biz` netherworld
-    - real-world architectural diagram:
+    - real-world architectural diagram&#8482;:
     ![Sisyphus or some shit I don't know](/the-dopness/static/pics/Journeys-to-the-Underworld.jpg)
 
 Todoozers:
@@ -36,7 +36,8 @@ _you can have it all_
 ![Nine Inch Nailer Trent "Rezzy" Reznor - Tiger Beat](/the-dopness/static/pics/9-incher.jpg)
 
 
-## if ya gotta set up tha db, bb
+## THA DB, bb
+**update db schema**
 from the root directory:
 ```
 # open up turso db shell
@@ -46,9 +47,10 @@ turso db shell <db name>
 .read ./db/rscy-gs.sql
 ```
 
-run it again and you got yourself a fresh new db, ya dig?
+that `rscy-gs.sql` file's gonna drop the current db so ya best tread carefully, ya dig?
 
-## set up the dopness dev env, bb
+## THE DOPNESS, bb
+**set up that dev env, yo**
 get in `/the-dopness` dir
 
 add deez variables to a `.env` file in that dir, yo:
@@ -75,6 +77,31 @@ air
 ```
 
 we're watching files and rebuilding and shit but we're not reloading it in the browser yet ok sorry you're gonna have to do that yourself for now my bad
+
+## RSCY BIZ
+**set up the devvy envi**
+lil busted at the moment, my dude. first you gotta build the gates of rsc from inside the `/rscy-biz`:
+```
+npm run build:gates
+```
+
+then you can dev that shit, bruv:
+```
+npm run dev
+```
+
+not gonna do a `nodemon` at this time because the `rscy-world` server shouldn't change much if any
+
+**prod stewart**
+if you build it
+```
+npm run build:gates
+npm run build:world
+```
+they will come
+```
+npm start
+```
 
 ## DADA (data)
 
