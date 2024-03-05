@@ -12,9 +12,9 @@ Now Playing:
     - real-world architectural diagram&#8482;:
     ![Sisyphus or some shit I don't know](/the-dopness/static/pics/Journeys-to-the-Underworld.jpg)
 
-Todoozers:
-- bundle `gates-of-rsc.tsx` <-- doin
-- serve up `gates-of-rsc.js` to be consumed by `the-dopness`
+Todoozers: 
+- get rscy <-- doin
+  - gotta figure out how to use the server in the rsc gate
 
 Up next:
 - fix the `/rscy` ui

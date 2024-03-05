@@ -3,8 +3,8 @@
 servin' up RSCs since 2024
 
 ## The Plan:
-- serve up file `gates-of-rsc.js` <-- doin
-- within this `gates-of-rsc` we shall mount our `rscy-biz` react shenanigans on a page of `the-dopness`
+- serve up file `gates-of-rsc.js`
+- within this `gates-of-rsc` we shall mount our `rscy-biz` react shenanigans on a page of `the-dopness` <-- doin
 - within these react shenani walls there lives a lil rscy baby hittin' that sweet db from the client, dog
 
 

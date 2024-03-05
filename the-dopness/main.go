@@ -149,7 +149,7 @@ func labHander(writer http.ResponseWriter, request *http.Request) {
 }
 
 func main() {
-	env.Load("./.env")
+	env.Load("../.env")
 	db := connectDb()
 	loadTemplates()
 	http.HandleFunc("/", welcomeHandler)

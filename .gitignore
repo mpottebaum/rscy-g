@@ -1,0 +1,12 @@
+# node
+node_modules
+package-lock.json
+
+# tailwind
+static/css/tailwind.css
+
+# air
+tmp
+
+# environment
+.env
