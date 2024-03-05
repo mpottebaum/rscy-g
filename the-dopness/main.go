@@ -40,7 +40,7 @@ func connectDb() *sql.DB {
 var templates = make(map[string]*template.Template, 3)
 
 func loadTemplates() {
-	templateNames := [3]string{"welcome", "form", "list"}
+	templateNames := [4]string{"welcome", "form", "list", "rsc-lab"}
 	for _, name := range templateNames {
 		t, err := template.ParseFiles("views/layout.html", "views/"+name+".html")
 		if err == nil {
@@ -144,6 +144,10 @@ func createFormHandler(db *sql.DB) func(http.ResponseWriter, *http.Request) {
 	}
 }
 
+func labHander(writer http.ResponseWriter, request *http.Request) {
+	templates["rsc-lab"].Execute(writer, nil)
+}
+
 func main() {
 	env.Load("./.env")
 	db := connectDb()
@@ -151,6 +155,7 @@ func main() {
 	http.HandleFunc("/", welcomeHandler)
 	http.HandleFunc("/rscy", createListHandler(db))
 	http.HandleFunc("/rscy/new", createFormHandler(db))
+	http.HandleFunc("/rsc-lab", labHander)
 	fsHandler := http.FileServer(http.Dir("./static"))
 	http.Handle("/files/", http.StripPrefix("/files", fsHandler))
 	err := http.ListenAndServe(":5000", nil)

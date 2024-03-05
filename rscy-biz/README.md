@@ -15,6 +15,6 @@ servin' up RSCs since 2024
   - OR develop against playwright e2e tests
 - replace vite dev server w/ storybook
 
-__the gates of rsc__
+#### __the gates of rsc__
 real-world architectural diagram&#8482;:
 ![Sisyphus or some shit I don't know](../the-dopness/static/pics/Journeys-to-the-Underworld.jpg)
