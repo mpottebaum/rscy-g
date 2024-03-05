@@ -5,13 +5,16 @@ trailblazing the Go/RSC stack: Risky a Go Go
 Now Playing:
 - RSC server
 
+`rscy-biz` game plan:
+  - build js code in `/rscy-biz` that outputs into the `/the-dopness` and mounts `rscy-biz`
+    - alternatively -> we serve everythang JS from `rscy-biz`
+  - `the-dopness` will then need to open some sort of portal into the `rscy-biz` netherworld
+    - real-world architectural diagram:
+    ![Sisyphus or some shit I don't know](/the-dopness/static/pics/Journeys-to-the-Underworld.jpg)
+
 Todoozers:
-- no idea - read dockies I guess
-  - game plan:
-    - build js code in `/rscy-biz` that outputs into the `/the-dopness` and mounts `rscy-biz`
-    - `the-dopness` will then need to open some sort of portal into the `rscy-biz` netherworld
-      - real-world architectural diagram:
-      ![Sisyphus or some shit I don't know](/the-dopness/static/pics/Journeys-to-the-Underworld.jpg)
+- bundle `gates-of-rsc.tsx` <-- doin
+- serve up `gates-of-rsc.js` to be consumed by `the-dopness`
 
 Up next:
 - fix the `/rscy` ui
