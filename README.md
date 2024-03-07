@@ -39,6 +39,8 @@ Up next:
   - cooler `Dopness` representation
 - e2e tests
   - probs [playwright](https://playwright.dev/) but who knows
+- cache some of these db calls yo we're reading dev like crazy right now y'all
+  - you know what -> this is probably a mad decent use case for RSCs let's go
 
 ![L.A. Lakers Legends Kareem Abdul-Jabbar, Shaquille O'Neal, George Mikan](/the-dopness/static/pics/lakeys.jpg)
 
