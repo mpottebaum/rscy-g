@@ -3,18 +3,19 @@
 trailblazing the Go/RSC stack: Risky a Go Go
 
 Now Playing:
-- RSC server
+- RSC server -> aka `rscy-biz`
 
 `rscy-biz` game plan:
-  - build js code in `/rscy-biz` that outputs into the `/the-dopness` and mounts `rscy-biz`
-    - alternatively -> we serve everythang JS from `rscy-biz`
+  - serve react code from `rscy-biz` and mount it on `the-dopness` via `<script>`
   - `the-dopness` will then need to open some sort of portal into the `rscy-biz` netherworld
     - real-world architectural diagram&#8482;:
     ![Sisyphus or some shit I don't know](/the-dopness/static/pics/Journeys-to-the-Underworld.jpg)
 
-Todoozers: 
+Todoozers:
 - get rscy <-- doin
-  - gotta figure out how to use the server in the rsc gate
+  - gotta figure out how to use the server in the rsc gate -> gonna dissect a nextjs rsc
+- clean up rsc script tag
+  - pull in `rscy-biz` base URL via env
 
 Up next:
 - fix the `/rscy` ui
@@ -22,6 +23,8 @@ Up next:
   - abbreviate `Busyness` text + some kinda expando
     - for expando: thinking modal on hover kinda like a netflix tile
   - cooler `Dopness` representation
+- e2e tests
+  - probs [playwright](https://playwright.dev/) but who knows
 
 ![L.A. Lakers Legends Kareem Abdul-Jabbar, Shaquille O'Neal, George Mikan](/the-dopness/static/pics/lakeys.jpg)
 
