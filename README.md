@@ -13,8 +13,22 @@ Now Playing:
 
 Todoozers:
 - get rscy <-- doin
-  - gotta figure out how to use the server in the rsc gate -> gonna dissect a nextjs rsc
-- clean up rsc script tag
+  - yooo ok I think we're cookin here we're gonna stream some react dude
+    - [check it](https://react.dev/reference/react-dom/server/renderToPipeableStream) dude we're grabbing the future by the hornz, g
+  - NEXT:
+    - need a `main.js` served up on `the-dopness`
+      - thinking I'll keep all react in `rscy-biz` and build what I need to `the-dopness`
+      - hopefully I can just bundle the `react` dependency with the lil bit of js I need in that file
+    - lil bit of js I need in `main.js`:
+    ```
+    // source: "check it" link above
+    import { hydrateRoot } from 'react-dom/client';
+    import { GatesOfRsc } from './GatesOfRsc.js';
+
+    hydrateRoot(document, <GatesOfRsc />);
+    ```
+      - now realizing we'll need to include our component as well
+- (I think this is OUTDATED now|see above) clean up rsc script tag
   - pull in `rscy-biz` base URL via env
 
 Up next:
