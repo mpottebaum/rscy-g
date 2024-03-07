@@ -7,6 +7,11 @@ Now Playing:
 
 `rscy-biz` game plan:
   - serve react code from `rscy-biz` and mount it on `the-dopness` via `<script>`
+    - sooooo -> turns out ^this isn't really how RSCs work
+    - instead, react wants to handle all that itself more or less (classic react decision/"everybody wants to rule the world but most of all react" - Beers For Tears)
+    - so I guess that means that--as it stands--I'll need to stream my RSC thru my GO server...? does that even make sense?
+      - perhaps a Better Approach&#8482; would be to swap places -> i.e., put the RSC server in front of the GO server.
+        - Except this kinda blows because I wanted to default to straight up HTML and opt in to RSCs. But stupid react's gotta leak all over the place...front-of-house outta here, dude
   - `the-dopness` will then need to open some sort of portal into the `rscy-biz` netherworld
     - real-world architectural diagram&#8482;:
     ![Sisyphus or some shit I don't know](/the-dopness/static/pics/Journeys-to-the-Underworld.jpg)
