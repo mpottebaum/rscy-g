@@ -1,14 +1,17 @@
 {
   "name": "rscy-biz",
-  "version": "0.0.1",
+  "type": "module",
+  "version": "0.0.2",
   "description": "rscy shit",
-  "main": "index.js",
+  "module": "src/gates-of-rsc.tsx",
+  "main": "src/rscy-world.ts",
   "scripts": {
     "dev": "NODE_ENV=dev nodemon ./src/rscy-world.ts",
-    "build:gates": "vite build",
-    "build:world:serv": "tsc src/rscy-world.ts --outDir dist --esModuleInterop",
-    "build:world:deps": "cp package.json dist/package.json && cp package-lock.json dist/package-lock.json && cd dist && npm ci --production",
+    "build:gates": "rollup -c",
+    "build:world:serv": "tsc src/rscy-world.ts --outDir dist --esModuleInterop --jsx react-jsx",
+    "build:world:deps": "./scrips/build-deps.prod.sh",
     "build:world": "npm run build:world:serv && npm run build:world:deps",
+    "build": "npm run build:gates && npm run build:world",
     "start": "NODE_ENV=prod node dist/rscy-world.js"
   },
   "author": "Mike Pottebaum",
@@ -21,6 +24,12 @@
     "react-dom": "^0.0.0-experimental-0066e0b68-20240306"
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.23.3",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-replace": "^5.0.5",
+    "@rollup/plugin-typescript": "^11.1.6",
     "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
     "@types/node": "^20.11.24",
@@ -28,7 +37,9 @@
     "@types/react-dom": "^18.2.19",
     "@vitejs/plugin-react": "^4.2.1",
     "nodemon": "^3.1.0",
+    "rollup": "^4.12.1",
     "ts-node": "^10.9.2",
+    "tslib": "^2.6.2",
     "typescript": "^5.3.3",
     "vite": "^5.1.5"
   }

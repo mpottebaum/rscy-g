@@ -1,9 +1,9 @@
-import express = require( 'express')
-import path = require('path')
+import express from 'express'
+import path from 'path'
 import cors from 'cors'
 import { renderToPipeableStream } from 'react-dom/server'
-import { GatesOfRsc } from './gates-of-rsc'
 import { createElement } from 'react'
+import { RscySqirl } from './rscy-sqirl'
 
 const port = 3000
 
@@ -11,7 +11,7 @@ const app = express()
 
 app.use(cors())
 
-let gatePath = '/js/gates-of-rsc.js'
+let gatePath = '/gates-of-rsc.js'
 if(process.env.NODE_ENV === 'dev') {
   gatePath = '../dist' + gatePath
 }
@@ -19,9 +19,10 @@ app.use('/gates-of-rsc.js', express.static(path.join(__dirname, gatePath)))
 
 app.use('/gate', (_, res) => {
   const { pipe } = renderToPipeableStream(
-    createElement(GatesOfRsc),
+    createElement(RscySqirl),
     {
-      bootstrapScripts: ['/files/main.js'],
+      // keeping full URL here in prep for usage on the-dopness
+      bootstrapScripts: ['http://localhost:3000/gates-of-rsc.js'],
       onShellReady() {
         res.setHeader('content-type', 'text/html');
         pipe(res);
